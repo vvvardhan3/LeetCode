@@ -1,5 +1,5 @@
 // If Given is Palindrome Number, Then return true!
-
+package Day02;
 public class palindrome {
     public static boolean number(){
 
