@@ -4,7 +4,7 @@ public class firstNonRecurringCharacter {
         /*
      * 1,2,3,4,1,2,3,5,4 --> 5
      * 2,1,1,2,3,4,3,4,6 --> 6
-     * {} --> Array is Empty!
+     * {} --> Array is Empty!!
      */
 
      public static void Nonrecurring(){
