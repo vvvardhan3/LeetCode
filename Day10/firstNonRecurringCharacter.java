@@ -8,7 +8,7 @@ public class firstNonRecurringCharacter {
      */
 
      public static void Nonrecurring(){
-        int[] array = {};
+        int[] array = {2,1,1,2,3,4,3,4,6};
 
         if (array.length > 0) {
             for (int i = 0; i < array.length; i++) {
