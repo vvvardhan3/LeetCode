@@ -14,6 +14,8 @@ public class removeElement {
         for (Integer integer : value) {
             list1.add(integer);
         }
+
+        // System.out.println(list1);
         
 
         List<Integer> list = new LinkedList<>();
@@ -21,6 +23,7 @@ public class removeElement {
         for (int i : nums) {
             list.add(i);
         }
+        // System.out.println(list);
 
         list.removeAll(list1);
 
