@@ -1,84 +1,37 @@
 package NeetCode;
 
-import java.util.Arrays;
-
 public class validAnagram {
     public static boolean anagram(){
-        String s = "anagram";
-        String t = "nagaram";
 
-        if (s.length() > t.length()) {
-            System.out.println("False");
+        String s = "anagram" ;
+        String t = "nagaram" ;
+
+        if (s.length() != t.length()) {
+            return false;
+        } else {
+
+            int[] count = new int[26];
+
+            for (int i = 0; i < s.length(); i++) {
+                count[s.charAt(i) - 'a']++;
+            }
+
+            for (int i = 0; i < t.length(); i++) {
+                count[t.charAt(i) - 'a']--;
+            }
+
+            for (int i = 0; i < count.length; i++) {
+                if (count[i] != 0) {
+                    return false;
+                }
+            }
         }
 
-        char[] s_char = s.toCharArray();
-        char[] t_char = t.toCharArray();
-
-        
-
-        Arrays.sort(s_char);
-        Arrays.sort(t_char);
-        //int sum_c_char = 0;
-        //int sum_t_char = 0;
-        
-
-        // for (int i = 0; i < s_char.length; i++) {
-        //     char Character = s_char[i];
-        //     // System.out.println(Character);
-        //     ascii = (int) Character;
-        //     sum_c_char = ascii + sum_c_char;
-            
-        // }  System.out.println("s_char: " + sum_c_char);
-
-        // for (int i = 0; i < t_char.length; i++) {
-        //     char Character = t_char[i];
-        //     // System.out.println(Character);
-        //     ascii = (int) Character;
-        //     sum_t_char = ascii + sum_t_char;
-            
-        // } System.out.println("t_char: " + sum_t_char);
-
-        // if (sum_c_char == sum_t_char) {
-        //     return true;
-        // }
-        // return false;
-
-        // System.out.println(ascii);
-
-        // List<Character> list_s = new ArrayList<>();
-        // List<Character> list_t = new ArrayList<>();
-
-        // for (char string : s_char) {
-        //     list_s.add(string);
-            
-        // }
-
-        // for (char string : t_char) {
-        //     list_t.add(string);
-            
-        // }
-
-        // System.out.println(list_s);
-
-
- 
-        // if (list_s.containsAll(list_t)) {
-        //     System.out.println("True");
-        // } else {
-        //     System.out.println("False");
-        // }
-        if (Arrays.equals(s_char, t_char)) {
-            return true;
-        }
-
-        return false;
+        return true;
         
     }
     public static void main(String[] args) {
-        boolean isAnagram = anagram();
-        System.out.println("Is Anagram?: " + isAnagram);
-        
-        
-        
+        boolean IsAnagram = anagram();
+        System.out.println("Is Anagram?: " + IsAnagram);
     }
 }
