@@ -7,7 +7,7 @@ import java.util.List;
 
 public class productOfArrayExceptSelf {
     public static void product(){
-        Integer[] nums = {-1, 1, 0, -3, 3};
+        Integer[] nums = {1,2,3,4};
         ArrayList<Integer> arraylist = new ArrayList<>();
 
         
