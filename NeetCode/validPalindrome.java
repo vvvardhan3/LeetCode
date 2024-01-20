@@ -14,21 +14,14 @@ public class validPalindrome {
             
         } 
 
-        // System.out.println(modified_name);
-        // System.out.println();
-        // System.out.println(temp);
-
-
-
         if (modified_name.equals(temp)) {
             System.out.println("true");
         } else {
             System.out.println("false");
         }
-        
-        
 
-       
-       
+
+        /* This is Ok Ok Solution, Need to get linear time complexitic solution */
+
     } 
 }
