@@ -30,12 +30,10 @@ public class longestConsecutiveSequence {
             }
             return longest;
         }
-        
-       
-       
     } 
     
     public static void main(String[] args) {
-        sequence();
+        int longestSequence = sequence();
+        System.out.println("Length of the longest consecutive sequence: " + longestSequence);
     }
 }
