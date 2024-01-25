@@ -1,19 +1,24 @@
 package NeetCode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FindCommonCharacters {
     public static void character(){
         String[] words = {"bella","label","roller"};
-        char[] word = {};
+        List<Character> list = new ArrayList<>();
+        
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words[i].length(); j++) {
+                if () {
+                    
+                }
+                
+            } 
+            
+        } System.out.println(list);
 
-        List<String> list = new ArrayList<>();
-
-        String word1 = "bella";
-
-        char[] charword = word1.toCharArray();
-        list.add(word1);
-        System.out.println(list);
+        
     }
     public static void main(String[] args) {
         character();
