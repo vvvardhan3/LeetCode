@@ -10,9 +10,7 @@ public class FindCommonCharacters {
         
         for (int i = 0; i < words.length; i++) {
             for (int j = 0; j < words[i].length(); j++) {
-                if () {
-                    
-                }
+                
                 
             } 
             
