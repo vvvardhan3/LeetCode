@@ -5,9 +5,7 @@ import java.util.Map;
 
 public class longestSubarrayWithSum {
     public static void sum(){
-        int nums[] = {1,2,1,2,1};
-        int k = 3;
-        // int len = 0;
+                // int len = 0;
 
         // for (int i = 0; i < nums.length; i++) {
         //     for (int j = i ; j < nums.length; j++) {
@@ -40,6 +38,9 @@ public class longestSubarrayWithSum {
         //     }
         // }
         // System.out.println(len);
+        int nums[] = {1,2,1,2,1};
+        int k = 3;
+
         Map<Long,Integer> preSumMap = new HashMap<>();
 
         long sum = 0;
