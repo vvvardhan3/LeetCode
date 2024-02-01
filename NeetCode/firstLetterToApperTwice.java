@@ -1,22 +1,19 @@
 package NeetCode;
 
+import java.util.HashSet;
 
 public class firstLetterToApperTwice {
-    public static void letter(){
+    public static char letter(){
         String s = "abccbaacz";
-        int n = s.length();
-        StringBuilder t=new StringBuilder();
-        
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    t.append(s.charAt(i));
-                    break;
-                } 
+        HashSet<Character> set = new HashSet<>();
+        for (int i = 0; i < s.length(); i++) {
+            char nch = s.charAt(i);
+            if (set.contains(nch)) {
+                return nch;
             }
+            set.add(nch);
         }
-        char newt = t.charAt(0);
-        System.out.println(newt);
+        return 0;
     }
     public static void main(String[] args) {
         letter();
