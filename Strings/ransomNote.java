@@ -4,31 +4,28 @@ import java.util.Arrays;
 
 public class ransomNote {
 
-    public static boolean canConstructRansomNote() {
-        String ransomNote = "aab";
-        String magazine = "baa";
+    public static boolean note(){
+        String ransomNote = "aa";
+        char[] ransomNote_c = ransomNote.toCharArray();
+        String magazine = "aab";
+        char[] magazine_c = magazine.toCharArray();
 
-        // Convert strings to char arrays and sort them
-        char[] ransomNoteChars = ransomNote.toCharArray();
-        char[] magazineChars = magazine.toCharArray();
-        Arrays.sort(ransomNoteChars);
-        Arrays.sort(magazineChars);
+        int i = 0;
+        int j=0;
 
-        // Use two pointers to compare the characters of both arrays
-        int i = 0, j = 0;
-        while (i < ransomNoteChars.length && j < magazineChars.length) {
-            if (ransomNoteChars[i] == magazineChars[j]) {
-                i++; // Found a matching character, move to the next character in ransomNote
+        Arrays.sort(ransomNote.toCharArray());
+        Arrays.sort(magazine.toCharArray());
+
+        while(i<ransomNote.length()&&j<magazine.length()) {
+            if (ransomNote_c[i] == magazine_c[j]) {
+                i++;
             }
-            j++; // Always move to the next character in magazine
+            j++;
         }
+        return i == ransomNote.length();
 
-        // If i reached the end of ransomNoteChars, it means all characters were found in magazine
-        return i == ransomNoteChars.length;
     }
-
     public static void main(String[] args) {
-        boolean result = canConstructRansomNote();
-        System.out.println("Can construct ransom note: " + result); // Expected: true
+       System.out.println( note());
     }
 }
