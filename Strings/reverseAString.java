@@ -10,9 +10,9 @@ public class reverseAString {
         String[] output = new String[s.length()];
         
         // String[] new_s = s.split(" ");
-        for (int index = new_s.length -1 ; index >= 0 ; index--) {
-            System.out.println(new_s[index]);
-        }
+        // for (int index = new_s.length -1 ; index >= 0 ; index--) {
+        //     System.out.println(new_s[index]);
+        // }
 
         
     }
