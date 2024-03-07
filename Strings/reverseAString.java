@@ -2,18 +2,15 @@ package Strings;
 
 public class reverseAString {
     public static void main(String[] args) {
-        String s = "  hello world  ";
-        int i = 0;
-        
-        
-        s = s.trim();
-        String[] output = new String[s.length()];
-        
-        // String[] new_s = s.split(" ");
-        // for (int index = new_s.length -1 ; index >= 0 ; index--) {
-        //     System.out.println(new_s[index]);
-        // }
+        String s = " The Sky is blue ";
 
-        
+        String[] s_t = s.trim().split("//s+");
+        String Output = "";
+
+        for (int i = s_t.length - 1 ; i > 0 ; i--) {
+            Output += s_t[i] + " ";
+        }
+
+        System.out.println(Output + s_t[0]);
     }
 }
