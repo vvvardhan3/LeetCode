@@ -30,9 +30,6 @@ public class countElementswithMaximumFrequency {
                 count+=i;
             }
         }
-
-
-
         return count;
 
         
