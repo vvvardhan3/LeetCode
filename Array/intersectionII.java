@@ -1,29 +1,34 @@
 package Array;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 public class intersectionII {
-    public static void intersection() {
-        int[] nums1 = {4, 9, 5};
-        int[] nums2 = {9, 4, 9, 8, 4};
+    public static void intersection(){
+        int[] nums1 = {4,9,5};
+        int[] nums2 = {9,4,9,8,4};
 
-        // Count occurrences of elements in nums1
-        Map<Integer, Integer> counts = new HashMap<>();
-        for (int num : nums1) {
-            counts.put(num, counts.getOrDefault(num, 0) + 1);
+        ArrayList<Integer> list1 = new ArrayList<>();
+    
+        for (Integer i : nums1) {
+            list1.add(i);
         }
 
-        // Print common elements based on occurrences in nums2
-        for (int num : nums2) {
-            if (counts.containsKey(num) && counts.get(num) > 0) {
-                System.out.println(num);
-                counts.put(num, counts.get(num) - 1); // Decrement count
+        for (Integer i : nums2) {
+            if (list1.contains(i)) {
+                System.out.println(i);
+                
             }
-        }
-    }
+        
 
+        }
+
+        
+        
+        
+
+    }
     public static void main(String[] args) {
         intersection();
     }
+    
 }
